@@ -44,15 +44,80 @@ export const TablesDiv = styled.div`
   width: 80%;
   height: 450px;
   background-color: var(--color-primary);
+`;
 
-  div:nth-child(1) {
-    width: 100%;
+export const SecondButtonsDiv = styled.div`
+  width: 100%;
+  height: 50px;
+  background-color: var(--color-secondary);
+
+  button {
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    color: var(--color-primary);
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+
+    :hover {
+      color: var(--color-accent);
+    }
+  }
+`;
+
+export const TitlesDiv = styled.div`
+  width: 100%;
+  display: flex;
+
+  div {
+    width: 33.33%;
     height: 50px;
-    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+`;
 
-    button {
-      height: 100%;
-      width: 50%;
+export const ListsDiv = styled.div`
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  justify-content: space-around;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 1px solid white;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      height: 50px;
+
+      button {
+        border: none;
+        background-color: transparent;
+
+        svg {
+          color: white;
+          font-size: 20px;
+        }
+      }
+
+      div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      span {
+        text-align: center;
+        color: white;
+      }
     }
   }
 `;

@@ -27,7 +27,7 @@ const FormAddSale = ({ handleClose }) => {
         toast.success("Venda realizada com sucesso!");
       })
       .catch(() => toast.error("Falha na requisição"));
-    // handleClose();
+    handleClose();
   };
 
   return (
@@ -46,7 +46,7 @@ const FormAddSale = ({ handleClose }) => {
           register={register}
           label="status"
           name="status"
-          op1="Em preparo"
+          op1="Em produção"
           op2="Pronto"
           op3="Cancelado"
         />
@@ -58,7 +58,10 @@ const FormAddSale = ({ handleClose }) => {
         error={!!errors.products?.message}
         helperText={errors.products?.message}
       />
-      <button type="submit">Criar</button>
+      <div>
+        <button type="submit">Salvar</button>
+        <button onClick={handleClose}>Cancelar</button>
+      </div>
     </Container>
   );
 };

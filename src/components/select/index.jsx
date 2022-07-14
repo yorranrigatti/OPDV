@@ -28,7 +28,7 @@ const BasicSelect = ({ label, helperText, error, register, name, ...rest }) => {
             {...register(name)}
             onChange={handleChange}
           >
-            <MenuItem value={"Em preparo"}>Em preparo</MenuItem>
+            <MenuItem value={"Em produção"}>Em produção</MenuItem>
             <MenuItem value={"Pronto"}>Pronto</MenuItem>
             <MenuItem value={"Cancelado"}>Cancelado</MenuItem>
           </Select>
